@@ -1,29 +1,22 @@
-# Foundation libsass template
+# Koobs and Kembler website
 
-This is a template to start your own project that uses Grunt and libsass!
+## Getting started
 
-## Requirements
-
-You'll need to have the following items installed before continuing.
-
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
-
-## Quickstart
-
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
+### Install libsass
+```
+brew update
+brew install libsass
 ```
 
-While you're working on your project, run:
+### Update dependencies
+```
+npm install -g grunt-cli
+npm install -g bower
+npm install
+bower install
+```
 
-`grunt`
-
-And you're set!
-
-## Directory Strucutre
-
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
+## Getting to work
+```
+grunt
+```
