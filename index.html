@@ -8,156 +8,260 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
+    <div id="hero" class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <h4>Are Getting Married</h4>
+        <p>On September 27, 2014</p>
+        <div class="contain-to-grid sticky" data-options="sticky_on: large">
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#" id="heroBtn">Back to the Top</a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            </ul>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li><a href="#" id="ourStoryBtn">Our Story</a></li>
+                <li><a href="#" id="weddingPartyBtn">Wedding Party</a></li>
+                <li><a href="#" id="detailsBtn">Wedding Details</a></li>
+                <li><a href="#" id="recommendationsBtn">Recommendations</a></li>
+                <li><a href="#" id="rsvpBtn">RSVP</a></li>
+                <li><a href="#" id="registryBtn">Registry</a></li>
+                <li><a href="#" id="contactBtn">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+    <div id="description" class="row">
+      <div class="large-4 columns">
+        <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+      </div>
+      <div class="large-8 columns">
+        <p>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.
+        </p>
+      </div>
+    </div>
+    <div id="ourStory" class="row">
+      <div class="large-5 columns">
+        <h1>Our Story</h1>
+      </div>
+      <div class="large-7 columns">
+        <div class="row">
+          <div class="large-4 columns">
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+          </div>
+          <div class="large-8 columns">
+            <h2>Mike Kokuba</h2>
+            <h3>Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h3>
+          </div>
         </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+          </div>
+          <div class="large-8 columns">
+            <h2>Kristen Embler</h2>
+            <h3>Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h3>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
+    <div id="quote" class="row">
+      <div class="large-offset-4 large-8 columns">
+        <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
+      </div>
+    </div>
+    <div id="photos" class="row">
+      <div class="large 12 columns">
+        <ul class="example-orbit" data-orbit data-options="slide_number: false;timer: false;">
+          <li>
+            <div class="row">
+              <div class="large-12 columns">
+                <h1>Kristen and Mike</h1>
+                <h2>Vestibulum id ligula porta felis euismod semper.</h2>
+                <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+            <div class="row">
+              <div class="large-8 columns">
+                <p style="-webkit-column-count:2;">Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <div class="large-4 columns">
+                <a href="#" class="button" data-orbit-link="first-photo-slide">See Photos</a>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+          </li>
+          <li data-orbit-slide="first-photo-slide">
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+            <div class="orbit-caption">
+              If you want a caption
             </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
+          </li>
+          <li>
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+          </li>
+          <li>
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 3" />
+          </li>
+        </ul>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+      </div>
+    </div>
+    <div id="weddingParty">
+      <div class="row">
+        <div class="large-12 columns">
+          <h1>Bridal Party<h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <h2>Title to something about bridesmaids.</h2>
+        </div>
+        <div class="large-4 columns">
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <h2>Title to something about groomsmen.</h2>
+        </div>
+        <div class="large-4 columns">
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Matt Kahl</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
+          <div>
+            <img class="avatar" src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+            <h3>Kayla Bragg</h3>
+            <h4>Etiam porta sem malesuada magna mollis euismod.</h4>
+          </div>
         </div>
       </div>
     </div>
+    <div id="details" class="row">
+      <div class="large 12 columns">
+        <ul class="example-orbit" data-orbit data-options="slide_number: false;timer: false;">
+          <li>
+            <div class="row">
+              <div class="large-12 columns">
+                <h1>Wedding Details</h1>
+                <h2>We will be saying "I do" at the Grand Rapids Downtown Market, conveniently located… downtown! The market hosts several local vendors on the first floor, a greenhouse, demo kitchens and banquet hall on the second and a fantastic outdoor farmers market during the summer months. </h2>
+                <p style="-webkit-column-count:3;column-count:3;">
+                  The ceremony will begin at 5pm in the Greenhouse. Yes, a working greenhouse! We know what you're thinking, and yes- we're crazy. Cross your fingers for mild weather but we've got a back-up plan just in case our Michigan weather gets a little out of hand. A cocktail hour will be held immediately following the ceremony; feel free to enjoy tasty beverages and snacks while we all mingle and take in the cool city views. Dinner is served at 7pm. Then the real party begins- bring your dancing shoes!
+                  Parking is provided by the Downtown Market but is also used by market patrons so space is limited. Please carpool if you're able, if not, street parking is also available on Ionia Street if needed.
+                  Wedding attire is, well, wedding attire. We think you guys get it, but if you’re wondering what that means- think semiformal. Dresses for ladies and slacks and button-ups for the menfolk.
+                </p>
+                <a href="#" class="button" data-orbit-link="first-wedding-details-slide">See Photos</a>
+              </div>
+            </div>
+          </li>
+          <li data-orbit-slide="first-wedding-details-slide">
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+            <div class="orbit-caption">
+              If you want a caption
+            </div>
+          </li>
+          <li>
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+          </li>
+          <li>
+            <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 3" />
+          </li>
+        </ul>
 
+      </div>
+    </div>
+    <div id="recommendations" class="row">
+      <div class="large-12 columns">
+        <h1>Recommendations</h1>
+        <h2>We love our city and we are excited to show off all the wonderful things that Grand Rapids has to offer!</h2>
+        <p style="-webkit-column-count:3;">Arriving on Friday? We encourage you to explore ArtPrize, the world’s largest art competition, held right here in Downtown GR. Art is literally everywhere. Local businesses, restaurants, and outdoor spaces are transformed into ArtPrize venues so grab some frozen yogurt <a href="http://www.sweetyos.com/#!downtown---grand-rapids/csvw">here</a> and take a peek!</p>
+      </div>
+    </div>
+    <div id="map" class="row">
+      <div class="large-12 columns">
+        <iframe src="https://mapsengine.google.com/map/u/1/embed?mid=zqL0hu6W_wDk.kCGrXiCwXans" style="width:100%; height:20em;"></iframe>
+      </div>
+    </div>
+    <div id="rsvp" class="row">
+      <div class="large-8 columns">
+        <h1>RSVP</h1>
+      </div>
+      <div class="large-4 columns">
+        <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+        <a href="#" class="button">RSVP Here</a>
+      </div>
+    </div>
+    <div id="registry" class="row">
+      <div class="large-12 columns">
+        <h1>Registry</h1>
+        <h2>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</h2>
+        <div>
+          <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+          <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />          <a href="#" class="button">RSVP Here</a>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="row">
+      <div class="large-4 columns">
+        <p>
+          Mike Kokuba <br>
+          mike.kokuba@gmail.com <br>
+          (616) 820-9684
+        </p>
+      </div>
+      <div class="large-4 columns">
+        <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 2" />
+      </div>
+      <div class="large-4 columns">
+        <p>
+          Kristen Embler <br>
+          kristen.embler@gmail.com <br>
+          (269) 275-1903
+        </p>
+      </div>
+    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="lib/Scrolld.js/scrolld.min.js"></script>
+    <script src="js/app.cs.js"></script>
   </body>
 </html>
