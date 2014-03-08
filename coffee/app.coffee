@@ -8,3 +8,6 @@ $ =>
     event.preventDefault()
     # Scroll to location
     $(@).scrolld()
+
+  # Initialize all swipe objects
+  SwipeHelper.autoDetect()
