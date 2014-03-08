@@ -78,6 +78,8 @@ p {
   }
 }
 
+// Image Gallery styling
+@import "imagegallery";
 
 // Hero section styling
 @import "hero";
@@ -85,21 +87,18 @@ p {
 // Description section styling
 @import "description";
 
-// Our story section styling
-@import "ourstory";
+// Intro to Kristen and Mike section styling
+@import "intro";
 
 // Quote section styling
 @import "quote";
 
+// Our story section styling
+@import "ourstory";
 
-#weddingParty {
-  background: black;
-  color: white;
+// Wedding party styling
+@import "weddingparty";
 
-  .title {
-    background: url('../images/ornaments/fence.png') bottom center repeat-x;
-  }
-}
 #map {
   iframe {
     display: block;
