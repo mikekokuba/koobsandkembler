@@ -36,6 +36,17 @@ body {
   position: relative;
 }
 
+// Menu
+.contain-to-grid.sticky{
+  li.name{
+    display: none;
+  }
+  &.fixed li.name{
+    display: block;
+  }
+}
+
+
 // Hero section styling
 @import "hero";
 
