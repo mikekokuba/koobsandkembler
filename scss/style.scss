@@ -1,0 +1,45 @@
+// Importing fonts
+@font-face{
+  font-family: 'benthem';
+  src: url('../web-fonts/benthem.eot');
+  src: url('../web-fonts/benthem.eot?#iefix') format('embedded-opentype'),
+       url('../web-fonts/benthem.woff') format('woff'),
+       url('../web-fonts/benthem.ttf') format('truetype'),
+       url('../web-fonts/benthem.svg#webfont') format('svg');
+}
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+// Define global variables here
+h1 {
+  font-family: 'benthem', serif;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+#hero {
+  background: black;
+}
+#description {
+  background: blue;
+}
+#quote {
+  background: purple;
+}
+#weddingParty {
+  background: black;
+  color: white;
+
+  .title {
+    background: url('../images/ornaments/fence.png') bottom center repeat-x;
+  }
+}
+#registry {
+  img {
+    max-width: 150px;
+  }
+}
+#contact {
+  background: blue;
+}

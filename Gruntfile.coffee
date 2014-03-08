@@ -9,9 +9,10 @@ module.exports = (grunt) ->
         options:
           outputStyle: "compressed"
 
-        files:
-          "css/app.css": "scss/app.scss"
-
+        files: [
+          "css/app.css": "scss/app.scss",
+          "css/style.css": "scss/style.scss"
+        ]
     coffee:
       # Compile all Coffeescript files and preserve the folder hierarchy
       all:

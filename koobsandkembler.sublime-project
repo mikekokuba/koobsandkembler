@@ -1,6 +1,12 @@
 {
-  "settings":
-  {
-      "tab_size": 2
-  }
+	"folders":
+	[
+		{
+			"path": "/Users/eric/Dropbox/Web Projects/koobsandkembler"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2
+	}
 }
