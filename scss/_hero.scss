@@ -34,17 +34,6 @@
   }
 }
 
-// For the top menu when it's fixed
-.contain-to-grid.sticky.fixed{
-  // Hide any content from being expanded
-  // We'll be showing the off-canvas menu
-  .expanded{
-    .right{
-      display: none;
-    }
-  }
-}
-
 #hero {
   text-align: center;
   height: 100%;
@@ -64,6 +53,7 @@
     font-size: 3em;
     font-weight: 300;
     margin: 2em 0 0;
+    text-transform: lowercase;
 
     // Need media queries
   }

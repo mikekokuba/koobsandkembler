@@ -1,0 +1,84 @@
+.ourstory-wrapper {
+  // Make this variable
+  background: url('../images/kristen-mike-image-gallery/4.png') no-repeat;
+  background-size: cover;
+
+  .tint-wrapper {
+    height: 100%;
+    // Make this variable
+    background-color:rgba(217,208,180,0.9);
+  }
+}
+
+#ourStory {
+  padding: $sectionPadding 0;
+
+  .row {
+    // Flex-box, DO NOT CHANGE
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+    -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center; -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  // Main section heading styling
+  .heading {
+    // Flex-box, DO NOT CHANGE
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+    -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center; -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 6em;
+    }
+  }
+
+  .people {
+    .avatar {
+      border-radius: 50%;
+      // add vendor prefixes
+      border: 3px solid white;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .margin.row {
+    margin-bottom: $sectionPadding/2;
+  }
+  .text {
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      padding-bottom: .5em;
+    }
+  }
+}
