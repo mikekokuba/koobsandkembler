@@ -32,7 +32,17 @@
     // Make this variable
     background-color:rgba(255,0,0,0.3);
   }
+}
 
+// For the top menu when it's fixed
+.contain-to-grid.sticky.fixed{
+  // Hide any content from being expanded
+  // We'll be showing the off-canvas menu
+  .expanded{
+    .right{
+      display: none;
+    }
+  }
 }
 
 #hero {
