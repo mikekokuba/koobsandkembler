@@ -1,0 +1,67 @@
+.header-wrapper {
+  height: 100%;
+  // Make this variable
+  background: url('../images/kristen-mike-image-gallery/4.png') no-repeat;
+  background-size: cover;
+
+  @media #{$xlarge-up} {
+    height: 800px;
+  }
+  @media #{$large-only} {
+    height: 100%;
+  }
+  @media #{$small-only} {
+    height: 500px;
+  }
+
+  .hero-wrapper {
+    // Add vendor prefixes and make variable
+    height: calc(100% - 60px);
+
+    .sticky {
+      border-top: 1px solid white;
+
+      &.fixed {
+        background: black;
+      }
+    }
+  }
+
+  .tint-wrapper {
+    height: 100%;
+    // Make this variable
+    background-color:rgba(255,0,0,0.3);
+  }
+
+}
+
+#hero {
+  text-align: center;
+  height: 100%;
+
+  svg {
+    margin-top: 20%;
+    width: 100%;
+
+    // Need media queries
+  }
+  h4, p {
+    color: white;
+    font-size: 3em;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 2em 0 0;
+
+    // Need media queries
+  }
+  p {
+    margin: .2em 0 0 0;
+    font-weight: 100;
+    text-transform: uppercase;
+
+    // Need media queries
+  }
+}

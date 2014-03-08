@@ -1,3 +1,6 @@
+// Foundation import
+@import "app";
+
 // Importing fonts
 @font-face{
   font-family: 'benthem';
@@ -15,13 +18,29 @@ h1 {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'futura-pt', sans-serif;
 }
 
-#hero {
-  background: black;
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
 }
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+// Hero section styling
+@import "hero";
+
 #description {
+  margin-top: $topbar-height;
   background: blue;
 }
 #quote {
@@ -33,6 +52,22 @@ body {
 
   .title {
     background: url('../images/ornaments/fence.png') bottom center repeat-x;
+  }
+}
+#map {
+  iframe {
+    display: block;
+
+    @media only screen and (max-width: 40em) {
+      display: none;
+    }
+  }
+  img {
+    display: none;
+
+    @media only screen and (max-width: 40em) {
+      display: block;
+    }
   }
 }
 #registry {
