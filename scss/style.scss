@@ -99,22 +99,15 @@ p {
 // Wedding party styling
 @import "weddingparty";
 
-#map {
-  iframe {
-    display: block;
+// Wedding details styling
+@import "details";
 
-    @media only screen and (max-width: 40em) {
-      display: none;
-    }
-  }
-  img {
-    display: none;
+// Recommendations styling
+@import "recommendations";
 
-    @media only screen and (max-width: 40em) {
-      display: block;
-    }
-  }
-}
+// Map styling
+@import "map";
+
 #registry {
   img {
     max-width: 150px;

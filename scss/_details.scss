@@ -1,0 +1,31 @@
+.details-wrapper {
+  // Make this variable
+  background: url('../images/section-backgrounds/pattern-1.png') no-repeat;
+  background-size: cover;
+
+  .tint-wrapper {
+    height: 100%;
+    // Make this variable
+    background-color:rgba(255,255,255,1);
+  }
+}
+
+#details {
+  padding: $sectionPadding 0;
+
+    h1 {
+      font-size: 6em;
+    }
+    h2 {
+      font-size: 2em;
+      font-weight: 200;
+      color: #777;
+    }
+    p {
+      // Add vendor prefixes
+      -webkit-column-count:2;
+      margin-top: .5em;
+      font-size: 1.3em;
+      color: #777;
+    }
+}
