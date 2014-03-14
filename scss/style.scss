@@ -111,11 +111,8 @@ p {
 // RSVP styling
 @import "rsvp";
 
-#registry {
-  img {
-    max-width: 150px;
-  }
-}
-#contact {
-  background: blue;
-}
+// Registry styling
+@import "registry";
+
+// Contact styling
+@import "contact";
