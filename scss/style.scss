@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-weight: 500;
   text-transform: lowercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   margin: 0;
 }
 h3 {
@@ -107,6 +107,9 @@ p {
 
 // Map styling
 @import "map";
+
+// RSVP styling
+@import "rsvp";
 
 #registry {
   img {

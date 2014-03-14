@@ -1,0 +1,77 @@
+.rsvp-wrapper {
+  // Make this variable
+  background: url('../images/section-backgrounds/pattern-1.png') no-repeat;
+  background-size: cover;
+
+  .tint-wrapper {
+    height: 100%;
+    // Make this variable
+    background-color:rgba(166,72,51,.8);
+  }
+}
+
+#rsvp {
+  padding: $sectionPadding 0;
+
+  .row {
+    // Flex-box, DO NOT CHANGE
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+    -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center; -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .button-wrapper {
+    // Flex-box, DO NOT CHANGE
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+    -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center; -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+    h1 {
+      font-size: 6em;
+      color: white;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: 200;
+      color: white;
+      text-transform: none;
+    }
+    .button {
+      background: $red;
+      border: none;
+      width: 100%;
+      margin: 0;
+      padding: 25px;
+      font-size: 1.5em;
+      font-weight: 100;
+
+      &:hover {
+        background: #7f2236;
+      }
+    }
+}
