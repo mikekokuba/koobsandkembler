@@ -1,27 +1,22 @@
 .map-wrapper {
-  // Make this variable
-  background: url('../images/section-backgrounds/pattern-3.png') no-repeat;
-  background-size: cover;
+  background: rgba(217,208,180,.3);
 
   .tint-wrapper {
     height: 100%;
-    // Make this variable
-    background-color:rgba(255,255,255,.8);
   }
 }
 
-
-
 #map {
 
+  // Resets Foundation base styling
   .row {
     max-width: inherit;
   }
-
   .map-col {
     padding: 0;
   }
 
+  // Styling for embedded Google map instance
   iframe {
     display: block;
     border: none;

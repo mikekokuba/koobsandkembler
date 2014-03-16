@@ -1,13 +1,5 @@
 .registry-wrapper {
-  // Make this variable
-  background: url('../images/section-backgrounds/pattern-2.png') no-repeat;
-  background-size: cover;
-
-  .tint-wrapper {
-    height: 100%;
-    // Make this variable
-    background-color:rgba(255,255,255,.8);
-  }
+  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba(255,255,255,.9));
 }
 
 #registry {

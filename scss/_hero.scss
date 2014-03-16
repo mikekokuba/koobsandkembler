@@ -1,8 +1,6 @@
 .header-wrapper {
   height: 100%;
-  // Make this variable
-  background: url('../images/kristen-mike-image-gallery/4.png') no-repeat;
-  background-size: cover;
+  @include background($filename: '../images/kristen-mike-image-gallery/4.png', $bgcolor: rgba(255,0,0,.3));
 
   @media #{$xlarge-up} {
     height: 800px;
@@ -15,8 +13,8 @@
   }
 
   .hero-wrapper {
-    // Add vendor prefixes and make variable
-    height: calc(100% - 60px);
+    // Need double quotes and spacing between numbers
+    @include calc(height, "100% - 60px");
 
     .sticky {
       border-top: 1px solid white;
@@ -27,11 +25,24 @@
     }
   }
 
-  .tint-wrapper {
-    height: 100%;
-    // Make this variable
-    background-color:rgba(255,0,0,0.3);
-  }
+  // Need to figure out how to center menu on top bar
+  // .top-bar-section {
+  //   text-align: center;
+
+  //   &:before {
+  //     content: '';
+  //     display: inline-block;
+  //     height: 100%;
+  //     vertical-align: middle;
+  //     margin-right: -0.25em; /* Adjusts for spacing */
+  //   }
+
+  //   ul.right {
+  //     display: inline-block;
+  //     vertical-align: middle;
+  //     width: auto;
+  //   }
+  // }
 }
 
 #hero {

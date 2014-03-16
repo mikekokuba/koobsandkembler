@@ -50,6 +50,12 @@ p {
   font-weight: 100;
   line-height: 1;
   margin: 0;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 // Swipe image gallery styling, DO NOT DELETE

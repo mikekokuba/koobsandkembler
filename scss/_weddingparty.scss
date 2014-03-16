@@ -1,20 +1,12 @@
 .wedding-party-wrapper {
-  // Make this variable
-  background: url('../images/section-backgrounds/pattern-2.png') repeat-y;
-  background-size: contain;
-
-  .tint-wrapper {
-    height: 100%;
-    // Make this variable
-    background-color:rgba(166,72,51,.9);
-  }
+  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba(166,72,51,.9));
 }
 
 #weddingParty {
   padding: $sectionPadding 0;
 
   .title {
-    background: url('../images/ornaments/fence.png') bottom center repeat-x;
+    background: url('../images/ornaments/fence.png') 61% 100% repeat-x;
 
     h1 {
       font-size: 6em;
@@ -36,8 +28,7 @@
     text-align: center;
 
     .avatar-wrapper {
-      border-radius: 75px;
-      // add vendor prefixes
+      @include border-radius(75px);
       border: 3px solid white;
       overflow: hidden;
       height: 130px;
@@ -49,6 +40,7 @@
       }
     }
 
+    // Add one off padding to second rows of people
     .person-wrapper {
       &:nth-child(2) {
         padding-top: 1em;

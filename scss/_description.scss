@@ -1,6 +1,9 @@
+.description-wrapper {
+  @include background($bgcolor: $red);
+}
+
 #description {
   padding: $sectionPadding 0;
-  background: $red;
 
   img {
     width: 100%;

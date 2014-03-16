@@ -1,6 +1,5 @@
 // Mixin to control section background and color tint
-
-@mixin background($filename, $repeat: no-repeat, $bgsize: cover, $bgcolor: white) {
+@mixin background($filename: none, $repeat: no-repeat, $bgsize: cover, $bgcolor: white) {
     background: transparent url(#{$filename}) $repeat;
     background-size: $bgsize;
 
@@ -12,7 +11,6 @@
 }
 
 // Mixin for flexbox code, used to vertically center elements that have unknown parent element heights
-
 @mixin flexbox() {
   // Flex-box, DO NOT CHANGE
   display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
@@ -32,4 +30,37 @@
   justify-content: center;
 }
 
+// Mixin for border-radius attribute
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
 // Mixin for calc function
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+// Mixin for multi column support
+@mixin columns($number) {
+  column-count:$number;
+  -moz-column-count:$number; /* Firefox */
+  -webkit-column-count:$number; /* Safari and Chrome */
+}
+
+// Mixin for buttons
+@mixin button($bgcolor: $red, $border: none, $padding: 25px) {
+  background: $bgcolor;
+  border: $border;
+  width: 100%;
+  margin: 0;
+  padding: $padding;
+  font-size: 1.5em;
+  font-weight: 100;
+
+  &:hover {
+    background: darken($bgcolor, 10%);
+  }
+}
