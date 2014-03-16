@@ -1,0 +1,35 @@
+// Mixin to control section background and color tint
+
+@mixin background($filename, $repeat: no-repeat, $bgsize: cover, $bgcolor: white) {
+    background: transparent url(#{$filename}) $repeat;
+    background-size: $bgsize;
+
+  .tint-wrapper {
+    height: 100%;
+    // Make this variable
+    background-color:$bgcolor;
+  }
+}
+
+// Mixin for flexbox code, used to vertically center elements that have unknown parent element heights
+
+@mixin flexbox() {
+  // Flex-box, DO NOT CHANGE
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+  -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+  -ms-flex-align: center; /* You know the drill now… */
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-box-pack: center; -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+// Mixin for calc function
