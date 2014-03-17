@@ -6,22 +6,36 @@
   padding: $sectionPadding 0;
 
   .row {
-    @include flexbox();
+    @media #{$medium-up} {
+      @include flexbox();
+    }
   }
 
   .button-wrapper {
-    @include flexbox();
+    @media #{$medium-up} {
+      @include flexbox();
+    }
   }
 
     h1 {
-      font-size: 6em;
+      font-size: 4em;
       color: white;
+
+      @media #{$large-up} {
+        font-size: 6em;
+      }
     }
     h2 {
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 200;
       color: white;
       text-transform: none;
+      margin-bottom: 1em;
+
+      @media #{$large-up} {
+        font-size: 1.5em;
+        margin-bottom: 0;
+      }
     }
     .button {
       @include button();

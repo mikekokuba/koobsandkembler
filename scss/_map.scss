@@ -18,19 +18,21 @@
 
   // Styling for embedded Google map instance
   iframe {
-    display: block;
-    border: none;
-    height: 500px;
-
-    @media only screen and (max-width: 40em) {
+    @media #{$small-up} {
       display: none;
+    }
+    @media #{$large-up} {
+      display: block;
+      border: none;
+      height: 500px;
     }
   }
   img {
-    display: none;
-
-    @media only screen and (max-width: 40em) {
-      display: block;
+    @media #{$small-up} {
+      display: block
+    }
+    @media #{$large-up} {
+      display: none;
     }
   }
 }

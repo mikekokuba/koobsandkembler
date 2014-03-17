@@ -7,7 +7,9 @@
   text-align: center;
 
   .row {
-    @include flexbox();
+    @media #{$medium-up} {
+      @include flexbox();
+    }
   }
 
     p {
@@ -15,6 +17,18 @@
       line-height: 1.3;
       color: white;
 
-      @include flexbox();
+      @media #{$medium-up} {
+        @include flexbox();
+      }
+    }
+
+    img {
+      max-width: 100px;
+      margin: 1.5em 0;
+
+      @media #{$medium-up} {
+        max-width: inherit;
+        margin: 0;
+      }
     }
 }

@@ -7,21 +7,50 @@
   text-align: center;
 
     h1 {
-      font-size: 6em;
+      font-size: 4em;
       color: black;
+
+      @media #{$large-up} {
+        font-size: 6em;
+      }
     }
     h2 {
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 200;
       color: #777;
       text-transform: none;
+
+      @media #{$large-up} {
+        font-size: 1.5em;
+      }
     }
     .images-wrapper {
       margin-top: 2em;
 
+      a {
+        display: block;
+
+        @media #{$large-up} {
+          display: inline-block;
+        }
+
+        // One-off padding for every even logo
+        &:nth-child(even) {
+          @media #{$small-up} {
+            margin: 1em 0;
+          }
+          @media #{$large-up} {
+            margin: 0 .5%;
+          }
+        }
+      }
+
       img {
-        max-width: 300px;
-        margin: 0 .5em;
+        max-width: 90%;
+
+        @media #{$medium-up} {
+          max-width: 300px;
+        }
       }
     }
 }

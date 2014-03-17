@@ -5,18 +5,37 @@
 #ourStory {
   padding: $sectionPadding 0;
 
-    h1 {
+  img {
+    display: none;
+
+    @media #{$large-up} {
+      display: inline-block;
+    }
+  }
+  h1 {
+    font-size: 4em;
+
+    @media #{$large-up} {
       font-size: 6em;
     }
-    h2 {
+  }
+  h2 {
+    font-size: 1.7em;
+    font-weight: 200;
+    color: #777;
+
+    @media #{$large-up} {
       font-size: 2em;
-      font-weight: 200;
-      color: #777;
     }
-    p {
+  }
+  p {
+    @include columns(1);
+    margin-top: .5em;
+    font-size: 1.3em;
+    color: #777;
+
+    @media #{$medium-up} {
       @include columns(2);
-      margin-top: .5em;
-      font-size: 1.3em;
-      color: #777;
     }
+  }
 }

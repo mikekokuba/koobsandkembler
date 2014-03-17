@@ -5,12 +5,6 @@
   @media #{$xlarge-up} {
     height: 800px;
   }
-  @media #{$large-only} {
-    height: 100%;
-  }
-  @media #{$small-only} {
-    height: 500px;
-  }
 
   .hero-wrapper {
     // Need double quotes and spacing between numbers
@@ -50,29 +44,34 @@
   height: 100%;
 
   svg {
-    margin-top: 20%;
+    margin-top: 35%;
     width: 100%;
 
-    // Need media queries
+    @media #{$medium-up} {
+      margin-top: 20%;
+    }
   }
   h4, p {
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1;
+
+    @media #{$large-up} {
+      font-size: 3em;
+    }
   }
   h4 {
-    font-size: 3em;
     font-weight: 300;
-    margin: 2em 0 0;
     text-transform: lowercase;
+    margin: 1em 0 0;
 
-    // Need media queries
+    @media #{$large-up} {
+      margin: 2em 0 0;
+    }
   }
   p {
     margin: .2em 0 0 0;
     font-weight: 100;
     text-transform: uppercase;
-
-    // Need media queries
   }
 }

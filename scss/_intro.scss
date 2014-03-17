@@ -6,7 +6,9 @@
   padding: $sectionPadding 0;
 
   .row {
-    @include flexbox();
+    @media #{$large-up} {
+      @include flexbox();
+    }
 
     // To allow vertical-align: top for avatar images
     &.table {
@@ -20,10 +22,16 @@
 
   // Main section heading styling
   .heading {
-    @include flexbox();
+    @media #{$large-up} {
+      @include flexbox();
+    }
 
     h1 {
-      font-size: 6em;
+      font-size: 4em;
+
+      @media #{$large-up} {
+        font-size: 6em;
+      }
     }
   }
 
@@ -40,11 +48,19 @@
   }
   // One off padding for second row of content
   .margin.row {
-    margin-bottom: $sectionPadding/2;
+    margin: ($sectionPadding/2) 0;
+
+    @media #{$large-up} {
+      margin: 0 0 ($sectionPadding/2) 0;
+    }
   }
   .text {
     h2 {
-      font-size: 2em;
+      font-size: 1.7em;
+
+      @media #{$large-up} {
+        font-size: 2em;
+      }
     }
     p {
       font-size: 1.5em;

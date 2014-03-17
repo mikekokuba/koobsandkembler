@@ -1,17 +1,10 @@
-.details-wrapper {
+.recommendations-wrapper {
   @include background($bgcolor: white);
 }
 
-#details {
+#recommendations {
   padding: $sectionPadding 0;
 
-  img {
-    display: none;
-
-    @media #{$large-up} {
-      display: inline-block;
-    }
-  }
   h1 {
     font-size: 4em;
     word-break: break-all;
