@@ -1,19 +1,17 @@
 .rsvp-wrapper {
-  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba(166,72,51,.8));
+  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba($red,.8));
 }
 
 #rsvp {
   padding: $sectionPadding 0;
 
-  .row {
-    @media #{$medium-up} {
-      @include flexbox();
-    }
-  }
+  // Mixin for CSS Table styling to allow vertical align
+  @include vertical-align($align: middle);
+  .left-content {
+    width: 100%;
 
-  .button-wrapper {
     @media #{$medium-up} {
-      @include flexbox();
+      width: 65%;
     }
   }
 
@@ -32,7 +30,7 @@
       text-transform: none;
       margin-bottom: 1em;
 
-      @media #{$large-up} {
+      @media #{$medium-up} {
         font-size: 1.5em;
         margin-bottom: 0;
       }

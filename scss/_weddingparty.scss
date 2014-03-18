@@ -1,5 +1,5 @@
 .wedding-party-wrapper {
-  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba(166,72,51,.9));
+  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba($auburn,.9));
 }
 
 #weddingParty {

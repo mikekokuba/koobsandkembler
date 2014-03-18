@@ -1,9 +1,12 @@
 .header-wrapper {
   height: 100%;
-  @include background($filename: '../images/kristen-mike-image-gallery/4.png', $bgcolor: rgba(255,0,0,.3));
+  @include background($filename: '../images/kristen-mike-image-gallery/4.png', $bgcolor: rgba($red,.5));
 
+  @media #{$small-only} {
+    min-height: inherit;
+  }
   @media #{$xlarge-up} {
-    height: 800px;
+    height: 768px;
   }
 
   .hero-wrapper {
@@ -44,8 +47,9 @@
   height: 100%;
 
   svg {
-    margin-top: 35%;
+    margin-top: 25%;
     width: 100%;
+    display: block;
 
     @media #{$medium-up} {
       margin-top: 20%;
@@ -63,10 +67,13 @@
   h4 {
     font-weight: 300;
     text-transform: lowercase;
-    margin: 1em 0 0;
+    margin: 0;
 
+    @media #{$medium-up} {
+      margin: .5em 0 0;
+    }
     @media #{$large-up} {
-      margin: 2em 0 0;
+      margin: 1em 0 0;
     }
   }
   p {

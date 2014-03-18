@@ -11,23 +11,25 @@
 }
 
 // Mixin for flexbox code, used to vertically center elements that have unknown parent element heights
-@mixin flexbox() {
-  // Flex-box, DO NOT CHANGE
-  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-  display: -moz-box;      /* OLD: Firefox (buggy) */
-  display: -ms-flexbox;   /* MID: IE 10 */
-  display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
-  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+@mixin vertical-align($parent-property: content-wrapper, $content-1: left-content, $content-2: right-content, $content-3: content, $align: middle) {
+  .#{$parent-property} {
+    display: block;
+    // Default Zurb Foundation row padding
+    margin: 0 auto;
+    // Default Zurb Foundation row width
+    max-width: 62.5rem;
+    overflow: hidden;
+  }
 
-  -webkit-box-align: center; -moz-box-align: center; /* OLD… */
-  -ms-flex-align: center; /* You know the drill now… */
-  -webkit-align-items: center;
-  align-items: center;
+  .#{$content-1}, .#{$content-2}, .#{$content-3} {
+    display: block;
+    padding: 0 0.9375rem;
 
-  -webkit-box-pack: center; -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+    @media #{$medium-up} {
+      display: table-cell;
+      vertical-align: #{$align};
+    }
+  }
 }
 
 // Mixin for border-radius attribute
@@ -39,6 +41,9 @@
 
 // Mixin for calc function
 @mixin calc($property, $expression) {
+  // Default fallback value
+  #{$property}: 100%;
+  #{$property}: -moz-calc(#{$expression});
   #{$property}: -webkit-calc(#{$expression});
   #{$property}: calc(#{$expression});
 }
@@ -54,6 +59,7 @@
 @mixin button($bgcolor: $red, $border: none, $padding: 25px) {
   background: $bgcolor;
   border: $border;
+  display: block;
   width: 100%;
   margin: 0;
   padding: $padding;

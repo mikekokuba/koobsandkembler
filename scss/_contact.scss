@@ -1,14 +1,19 @@
 .contact-wrapper {
-  @include background($filename: '../images/section-backgrounds/pattern-1.png', $bgcolor: $red);
+  @include background($bgcolor: $red);
 }
 
 #contact {
   padding: $sectionPadding 0;
   text-align: center;
 
-  .row {
+  // Mixin for CSS Table styling to allow vertical align
+  @include vertical-align($content-1: content, $align: middle);
+  .content {
+    width: 100%;
+
     @media #{$medium-up} {
-      @include flexbox();
+      width: 33.333%;
+      float: left;
     }
   }
 
@@ -16,10 +21,6 @@
       font-size: 1.3em;
       line-height: 1.3;
       color: white;
-
-      @media #{$medium-up} {
-        @include flexbox();
-      }
     }
 
     img {

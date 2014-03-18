@@ -1,5 +1,5 @@
 .quote-wrapper {
-  @include background($filename: '../images/section-backgrounds/pattern-1.png', $bgcolor: rgba(0,0,0,.7));
+  @include background($filename: '../images/section-backgrounds/pattern-1.png', $bgcolor: rgba(black,.7));
 }
 
 #quote {

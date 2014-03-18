@@ -1,29 +1,28 @@
 .intro-wrapper {
-  @include background($filename: '../images/kristen-mike-image-gallery/3.jpg', $bgcolor: rgba(217,208,180,.9));
+  @include background($filename: '../images/kristen-mike-image-gallery/3.jpg', $bgcolor: rgba($green,.9));
 }
 
 #intro {
   padding: $sectionPadding 0;
 
-  .row {
-    @media #{$large-up} {
-      @include flexbox();
-    }
+  // Mixin for CSS Table styling to allow vertical align
+  @include vertical-align($content-1: heading, $content-2: content, $align: middle);
 
-    // To allow vertical-align: top for avatar images
-    &.table {
-      display: table;
-    }
-    .people, .text {
-      display: table-cell;
-      vertical-align: top;
-    }
+  // To allow vertical-align: top for avatar images
+  &.table {
+    display: table;
+  }
+  .people, .text {
+    display: table-cell;
+    vertical-align: top;
   }
 
   // Main section heading styling
   .heading {
-    @media #{$large-up} {
-      @include flexbox();
+    width: 100%;
+
+    @media #{$medium-up} {
+      width: 35%;
     }
 
     h1 {
