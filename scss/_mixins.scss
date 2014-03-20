@@ -1,7 +1,8 @@
 // Mixin to control section background and color tint
-@mixin background($filename: none, $repeat: no-repeat, $bgsize: cover, $bgcolor: white) {
+@mixin background($filename: none, $repeat: no-repeat, $bgsize: cover, $bgcolor: white, $bgattachment: scroll) {
     background: transparent url(#{$filename}) $repeat;
     background-size: $bgsize;
+    background-attachment: $bgattachment;
 
   .tint-wrapper {
     height: 100%;
@@ -10,7 +11,7 @@
   }
 }
 
-// Mixin for flexbox code, used to vertically center elements that have unknown parent element heights
+// Mixin used to vertically center elements that have unknown parent element heights
 @mixin vertical-align($parent-property: content-wrapper, $content-1: left-content, $content-2: right-content, $content-3: content, $align: middle) {
   .#{$parent-property} {
     display: block;

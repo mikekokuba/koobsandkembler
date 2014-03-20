@@ -1,5 +1,5 @@
 .intro-wrapper {
-  @include background($filename: '../images/kristen-mike-image-gallery/3.jpg', $bgcolor: rgba($green,.9));
+  @include background($filename: '../images/kristen-mike-image-gallery/3.jpg', $bgcolor: rgba($green,.9), $bgattachment: fixed);
 }
 
 #intro {
