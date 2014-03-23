@@ -1,6 +1,6 @@
 .header-wrapper {
   height: 100%;
-  @include background($filename: '../images/kristen-mike-image-gallery/4.png', $bgcolor: rgba($red,.5), $bgattachment: fixed);
+  @include background($filename: '../images/kristen-mike-image-gallery/3.jpg', $bgcolor: rgba($red,.5), $bgattachment: fixed);
 
   @media #{$small-only} {
     min-height: inherit;
