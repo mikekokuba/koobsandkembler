@@ -11,7 +11,7 @@
 
   .hero-wrapper {
     // Need double quotes and spacing between numbers
-    @include calc(height, "100% - 60px");
+    @include calc(height, "100% - 90px");
 
     .sticky {
       border-top: 1px solid white;

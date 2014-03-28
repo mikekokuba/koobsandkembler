@@ -6,6 +6,7 @@
     <title>Kristen and Mike Are Getting Married - September 27, 2014</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qjn3zbt.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -166,33 +167,22 @@
             </div>
           </div>
         </section>
-        <!-- The Menu -->
-        <div class="contain-to-grid sticky" data-options="sticky_on: large">
-          <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-              <li class="toggle-topbar menu-icon"><a href="#" >Menu</a></li>
-              <li class="name">
-                <h1><a href="#" id="heroBtn">Back to the Top</a></h1>
-              </li>
-            </ul>
-            <section class="top-bar-section">
-              <!-- Right Nav Section -->
-              <ul class="right">
-                <li><a href="#" id="ourStoryBtn">Our Story</a></li>
-                <li><a href="#" id="weddingPartyBtn">Wedding Party</a></li>
-                <li><a href="#" id="detailsBtn">Wedding Details</a></li>
-                <li><a href="#" id="recommendationsBtn">Recommendations</a></li>
-                <li><a href="#" id="rsvpBtn">RSVP</a></li>
-                <li><a href="#" id="registryBtn">Registry</a></li>
-                <li><a href="#" id="contactBtn">Contact</a></li>
-            </section>
-              </ul>
-          </nav>
-        </div>
+        <div class="menu-button one-page">Menu</div>
+        <nav class="stickup-menu">
+          <!-- Right Nav Section -->
+          <ul data-breakpoint="856" class="flexnav one-page">
+            <li><a href="#" class="menuItem" id="ourStoryBtn">Our Story</a></li>
+            <li><a href="#" class="menuItem" id="weddingPartyBtn">Wedding Party</a></li>
+            <li><a href="#" class="menuItem" id="detailsBtn">Wedding Details</a></li>
+            <li><a href="#" class="menuItem" id="recommendationsBtn">Recommendations</a></li>
+            <li><a href="#" class="menuItem" id="rsvpBtn">RSVP</a></li>
+            <li><a href="#" class="menuItem" id="registryBtn">Registry</a></li>
+            <li><a href="#" class="menuItem" id="contactBtn">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
-
   <div class="description-wrapper">
     <div id="description" class="tint-wrapper">
       <div class="row">
@@ -528,6 +518,8 @@
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="lib/flexnav/js/jquery.flexnav.min.js"></script>
+  <script src="lib/stickUp/stickUp.js"></script>
   <script src="lib/Scrolld.js/scrolld.min.js"></script>
   <script src="lib/Swipe/swipe.js"></script>
   <script src="js/SwipeHelper.cs.js"></script>

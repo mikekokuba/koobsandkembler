@@ -1,0 +1,338 @@
+$menu_bg_color: rgba(0,0,0,0.7);
+$responsive_break_point: 856px;
+
+// Anything commented out below was a custom modification from the flexnav base styles along with some
+// slight other alterations regarding transparency
+
+/* Flexnav Base Styles */
+$nav_text: white;
+$top_level: transparent;
+$second_level: transparent;
+$third_level: transparent;
+$fourth_level: transparent;
+
+.flexnav {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none;
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 0;
+
+  &.opacity {
+    opacity: 0;
+  }
+
+    &.flexnav-show {
+        max-height: 2000px;
+        opacity: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+    &.one-page {
+        // position: fixed;
+        top: 50px;
+        right: 5%;
+        max-width: 200px;
+    }
+
+    li {
+        font-size: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    li a {
+        position: relative;
+        display: block;
+        padding: .96em;
+        z-index: 2;
+        overflow: hidden;
+        color: $nav_text;
+        background: $top_level;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+    }
+    li ul {
+        width: 100%;
+
+        li {
+            font-size: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+    li ul.flexnav-show {
+
+        li {
+            overflow: visible;
+        }
+    }
+
+    li ul li a {
+        display: block;
+        background: $second_level;
+    }
+    ul li ul li a {
+        background: $third_level;
+    }
+    ul li ul li ul li a {
+        background: $fourth_level;
+    }
+    .touch-button {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: #acaca1;
+        background: rgba(0,0,0,.075);
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+        .navicon {
+            position: relative;
+            top: 1.4em;
+            font-size: 12px;
+            color: #666;
+        }
+    }
+}
+.menu-button {
+    position: relative;
+    display: block;
+    padding: 1em;
+    background: $top_level;
+    color: $nav_text;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+
+    &.one-page {
+        position: fixed;
+        top: 0;
+        right: 5%;
+        padding-right: 45px;
+    }
+
+    .touch-button {
+        background: transparent;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+
+        .navicon {
+            font-size: 16px;
+            position: relative;
+            top: 1em;
+            color: #666;
+        }
+    }
+}
+
+@media all and (min-width: $responsive_break_point) {
+    body.one-page {
+        padding-top: 70px;
+    }
+    .flexnav {
+        overflow: visible;
+        &.opacity {
+          opacity: 1;
+        }
+        &.one-page {
+            top: 0;
+            right: auto;
+            max-width: 1080px;
+        }
+        li {
+            position: relative;
+            list-style: none;
+            float: left;
+            display: block;
+            background-color: $top_level;
+            overflow: visible;
+            // width: 20%;
+        }
+        li a {
+            // border-left: 1px solid #acaca1;
+            border-bottom: none;
+        }
+        li > ul {
+            position: absolute;
+            top: auto;
+            left: 0;
+
+            li {
+                width: 100%;
+            }
+        }
+        li ul li > ul {
+            margin-left: 100%;
+            top: 0;
+        }
+        li ul li:hover > ul,
+        li ul li > ul.flexnav-show {
+        }
+        li ul li a {
+            border-bottom: none;
+        }
+        li ul.open {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+            li {
+                overflow: visible;
+                max-height: 100px;
+            }
+            ul.open {
+                margin-left: 100%;
+                top: 0;
+            }
+        }
+    }
+    .menu-button {
+        display: none;
+    }
+}
+
+.oldie {
+    body.one-page {
+        padding-top: 70px;
+    }
+    .flexnav {
+        overflow: visible;
+        &.one-page {
+            top: 0;
+            right: auto;
+            max-width: 1080px;
+        }
+        li {
+            position: relative;
+            list-style: none;
+            float: left;
+            display: block;
+            background-color: $top_level;
+            // width: 20%;
+            min-height: 50px;
+            overflow: visible;
+        }
+        li:hover > ul {
+            display: block;
+            width: 100%;
+            overflow: visible;
+            li {
+                width: 100%;
+                float: none;
+            }
+        }
+        li a {
+            // border-left: 1px solid #acaca1;
+            border-bottom: none;
+            overflow: visible;
+        }
+        li > ul {
+            background:#acaca1;
+            position: absolute;
+            top: auto;
+            left: 0;
+            display: none;
+            z-index: 1;
+            overflow: visible;
+        }
+        li ul li ul {
+            top: 0;
+        }
+        li ul li a {
+            border-bottom: none;
+        }
+        li ul.open {
+            display: block;
+            width: 100%;
+            overflow: visible;
+            li {
+                width: 100%;
+            }
+            ul.open {
+                margin-left: 100%;
+                top: 0;
+                display: block;
+                width: 100%;
+                overflow: visible;
+            }
+        }
+        ul li:hover ul {
+            margin-left: 100%;
+            top: 0;
+        }
+    }
+    .menu-button {
+        display: none;
+    }
+    &.ie7 .flexnav li {
+        width: 19.9%;
+    }
+}
+
+// Below are custom styles
+.menu-button.one-page{
+  width: 100%;
+  right: 0;
+  background-color:$menu_bg_color;
+  text-align: right;
+  z-index: 1000;
+}
+nav{
+    @media all and (max-width: $responsive_break_point) {
+      // Remove the border
+      border: none;
+    }
+    // Pretty ribbon border
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width:100%;
+    z-index: 1000;
+    text-align: center;
+    // All ul styles
+    ul.flexnav.one-page{
+      // Allow the ul to obtain a height
+      @include clearfix();
+      width: auto;
+      display: inline-block;
+      max-height: none;
+      right: 0;
+      li{
+        // Increase the font-size
+        font-size: 1.2em;
+        a{
+          // Tighten up the padding
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    // Once the break point hits
+    ul.sm-screen{
+      position:fixed;
+      li{
+        background-color: $menu_bg_color;
+        a {
+          text-align: right;
+        }
+      }
+    }
+    // When it's sticky on top
+    &.isStuck{
+      background-color:$menu_bg_color;
+    }
+}
