@@ -1,4 +1,10 @@
 $ =>
+  # Initialize responsive menu
+  $(".flexnav").flexNav();
+
+  # Initialize navigation
+  $('.stickup-menu').stickUp()
+
   # Initialize Zurb
   $(document).foundation()
 

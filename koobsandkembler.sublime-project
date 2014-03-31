@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Users/eric/Dropbox/Web Projects/koobsandkembler"
+			"follow_symlinks": true,
+			"path": "."
 		}
 	],
 	"settings":

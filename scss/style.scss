@@ -74,16 +74,6 @@ p {
   position: relative;
 }
 
-// Menu
-.contain-to-grid.sticky{
-  li.name{
-    display: none;
-  }
-  &.fixed li.name{
-    display: block;
-  }
-}
-
 // Mixins
 @import "mixins";
 
@@ -92,6 +82,9 @@ p {
 
 // Hero section styling
 @import "hero";
+
+// Navigation bar
+@import "navigation";
 
 // Description section styling
 @import "description";
