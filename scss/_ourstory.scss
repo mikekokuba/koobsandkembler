@@ -31,7 +31,7 @@
   p {
     @include columns(1);
     margin-top: .5em;
-    font-size: 1.3em;
+    font-size: 1.0em;
     color: #777;
 
     @media #{$medium-up} {
