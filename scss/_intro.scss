@@ -1,5 +1,5 @@
 .intro-wrapper {
-  @include background($bgcolor: rgba($green,.9), $bgattachment: fixed);
+  @include background($bgcolor: rgba($green,.6), $bgattachment: fixed);
 }
 
 #intro {

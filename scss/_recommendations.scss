@@ -1,5 +1,5 @@
 .recommendations-wrapper {
-  @include background('../images/section-backgrounds/pattern-2.png', repeat, contain, rgba($auburn,.9));
+  @include background($bgcolor: rgba($green,.6));
 }
 
 #recommendations {
@@ -11,7 +11,6 @@
     hyphens: auto;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
-    color: white;
 
     @media #{$large-up} {
       font-size: 5em;
@@ -20,7 +19,6 @@
   h2 {
     font-size: 1.7em;
     font-weight: 200;
-    color: white;
 
     @media #{$large-up} {
       font-size: 1.25em;
@@ -30,7 +28,6 @@
     @include columns(1);
     margin-top: .5em;
     font-size: 1.3em;
-    color: white;
 
     @media #{$medium-up} {
       @include columns(2);

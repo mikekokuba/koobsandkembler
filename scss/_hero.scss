@@ -1,6 +1,6 @@
 .header-wrapper {
   height: 100%;
-  @include background($filename: '../images/kristen-mike-image-gallery/IMG_2406.jpg', $bgcolor: rgba($red,.5), $bgattachment: fixed);
+  @include background($filename: '../images/kristen-mike-image-gallery/IMG_2406.jpg', $bgcolor: rgba(black,.5), $bgattachment: fixed);
 
   @media #{$small-only} {
     min-height: inherit;
@@ -79,6 +79,5 @@
   p {
     margin: .2em 0 0 0;
     font-weight: 100;
-    text-transform: uppercase;
   }
 }
