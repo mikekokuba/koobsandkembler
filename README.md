@@ -3,13 +3,16 @@
 ## Getting started
 
 ### Install global dependencies
+```
+brew update
+```
 #### Bower and Grunt
 ```
+brew install npm
 npm install -g bower grunt-cli
 ```
 #### Libsass
 ```
-brew update
 brew install libsass
 ```
 
